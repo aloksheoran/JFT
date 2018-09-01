@@ -6,6 +6,13 @@ public class VariableExample {
 		int firstnumber;
 		firstnumber=23;
 		int SecondNumber = 78;
+		System.out.println(SecondNumber);      
+	    System.out.println(SecondNumber++);    
+	    System.out.println(++SecondNumber);
+		
+		
+		
+		
 		int sum = firstnumber + SecondNumber;
 		System.out.println("sum :"+ sum);
 		
@@ -28,6 +35,8 @@ public class VariableExample {
 		double dobNum = 4986.858935;
 		boolean flag = false;
 		char myFirstChar = 'd';
+		String firstString = "My Name is Latha";
+				System.out.println(firstString);
 	}
 
 }

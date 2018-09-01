@@ -11,8 +11,9 @@ public class GreatestOutOfTwoNumbers {
 		} 
 		if(firstNum == secondNum) {
 			System.out.println("Both are equal");
-		} else {
-			System.out.println("Second Number is greatest");
+		}
+			if(secondNum > firstNum) {
+				System.out.println("second Number is greatest");
 		}
 	}
 
