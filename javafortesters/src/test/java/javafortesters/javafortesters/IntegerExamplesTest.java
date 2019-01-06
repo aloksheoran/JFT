@@ -17,7 +17,7 @@ public class IntegerExamplesTest {
     public void hexExplore() {
 
         Integer s = new Integer(11);
-        Assert.assertEquals("11 becomes b", "b",s.toHexString(11));
+        Assert.assertEquals("11 becomes-b", "b",s.toHexString(11));
     }
 
 }
