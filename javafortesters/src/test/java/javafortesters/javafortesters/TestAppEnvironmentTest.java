@@ -12,7 +12,7 @@ public class TestAppEnvironmentTest {
 	
 	public void canGetUrlStatically(){ 
 		
-		TestAppEnv.getUrl();
+		assertEquals(" Returns Hard Coded URL", "http:// 192.123.0.3: 67", TestAppEnv.getUrl() );
 
 	}
 
@@ -24,9 +24,6 @@ public class TestAppEnvironmentTest {
 		
 		assertEquals(" Just the port", "67" , TestAppEnv.PORT);
 
-
 	}
-
-	
 
 }
