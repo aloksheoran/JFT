@@ -11,7 +11,7 @@ public class TestAppEnvironmentTest {
 	public void canGetUrlStatically(){ 
 		
 		
-		TestAppEnv.getUrl()
+		TestAppEnv.getUrl();
 
 		
 	}
