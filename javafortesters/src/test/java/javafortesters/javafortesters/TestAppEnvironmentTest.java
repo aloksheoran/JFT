@@ -1,9 +1,6 @@
 package javafortesters.javafortesters;
-
-import static org.junit.Assert.*;
-
+import org.junit.Assert;
 import org.junit.Test;
-
 import com.javafortesters.domainobject.TestAppEnv;
 
 public class TestAppEnvironmentTest {
@@ -12,7 +9,7 @@ public class TestAppEnvironmentTest {
 	
 	public void canGetUrlStatically(){ 
 		
-		assertEquals(" Returns Hard Coded URL", "http:// 192.123.0.3: 67", TestAppEnv.getUrl() );
+		Assert.assertEquals("Returns Hard Coded URL", "http://192.123.0.3:67", TestAppEnv.getUrl() );
 
 	}
 
@@ -20,9 +17,9 @@ public class TestAppEnvironmentTest {
 	
 	public void canGetDomainAndPortStatically()  { 
 		
-		assertEquals(" Just the Domain", "192.123.0.3", TestAppEnv.DOMAIN);
+		Assert.assertEquals(" Just the Domain", "192.123.0.3", TestAppEnv.DOMAIN);
 		
-		assertEquals(" Just the port", "67" , TestAppEnv.PORT);
+		Assert.assertEquals(" Just the port", "67" , TestAppEnv.PORT);
 
 	}
 
