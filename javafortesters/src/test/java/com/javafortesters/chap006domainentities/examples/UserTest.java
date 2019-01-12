@@ -9,21 +9,15 @@ import com.javafortesters.domainentities.User;
 
 public class UserTest {
 	
-	@Test 
+	@Test
 	
-	 public void userHasDefaultUsernameAndPassword(){
-
-		User user = new User();
+	public void canConstructWithUsernameAndPassword(){ 
+		User user = new User(" admin", "pA55w0rD"); 
 		
-		user.username = "bob";
+		assertEquals(" given username expected", "admin", user.getUsername()); 
+		
+		assertEquals(" given password expected", "pA55w0rD", user.getPassword()); }
 
 
-		assertEquals(" default username expected", "bob", user.getUsername()); 
-		
-		assertEquals(" default password expected", "password", user.getPassword());
-
-		
-		
-     }
 	
 }
