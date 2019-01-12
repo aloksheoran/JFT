@@ -12,7 +12,7 @@ public class UserTest {
 	@Test
 	
 	public void canConstructWithUsernameAndPassword(){ 
-		User user = new User(" admin", "pA55w0rD"); 
+		User user = new User("admin", "pA55w0rD"); 
 		
 		assertEquals(" given username expected", "admin", user.getUsername()); 
 		
