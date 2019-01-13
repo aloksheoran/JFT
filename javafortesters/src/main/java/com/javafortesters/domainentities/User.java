@@ -3,24 +3,29 @@ package com.javafortesters.domainentities;
 
 public class User {
 	
-	public String username; 
-	public String password; 
+//	private String username; 
+	private String password; 
 	
-	public User(String username1, String password1){ 
-		this.username = username1; 
-		this.password = password1; 
+	public User(){ 
+	//	username = "username"; 
+		password = "Alok1234"; 
 		
 	}
 
 
-	public Object getUsername() {
-		// TODO Auto-generated method stub
-		return username;
+	public void getpassword(String password) { 
+		this.password = password; 
+		
 	}
 
-	public Object getPassword() {
-		// TODO Auto-generated method stub
-		return password;
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
+
+
+
+
+	
 
 }
